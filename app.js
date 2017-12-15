@@ -10,6 +10,7 @@ var users = require('./routes/users');
 
 //app routes
 var dashboard = require('./routes/dashboard');
+var multiviztest = require('./routes/multiviztest');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/dashboard', dashboard);
+app.use('/multiviztest', multiviztest);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

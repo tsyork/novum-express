@@ -1,8 +1,10 @@
 {
-  "name": "novum-express",
+  "name": "novum-app",
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean",
     "start": "node ./bin/www"
   },
   "dependencies": {
